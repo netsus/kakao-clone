@@ -6,18 +6,26 @@
         <title>Inline Example</title>
         <link href="styles.css" rel="stylesheet">
         <style>
-            .box{
-                background-color: green;
-                width: 200px;
-                height: 200px;
-                border:2px solid black;
-                display: block;
+            .abs-box{
+                width: 400px;
+                height: 400px;
+                background-color: yellow;
+                position: relative;
             }
+            .abs-child{
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                position: absolute;
+                right: 150px;
+                top: 150px;
+            }
+      
         </style>
     </head>
     <body>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="abs-box">
+            <div class="abs-child"></div>
+        </div>
     </body>
     </html>  
