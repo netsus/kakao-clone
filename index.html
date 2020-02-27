@@ -3,29 +3,44 @@
     <head>
         <meta charset="utf-8">
         <meta name="author" content="CWJ">
-        <title>Inline Example</title>
+        <title>Flex</title>
         <link href="styles.css" rel="stylesheet">
         <style>
-            .abs-box{
-                width: 400px;
-                height: 400px;
-                background-color: yellow;
-                position: relative;
+            html,body{ 
+                height: 100%; 
             }
-            .abs-child{
-                width: 100px;
-                height: 100px;
-                background-color: green;
-                position: absolute;
-                right: 150px;
-                top: 150px;
+            .father{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-direction: row-reverse;
+                height: 100%;
+                flex-wrap: nowrap;
             }
-      
+            .box{
+                background-color: gold;
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color:limegreen;
+            }
         </style>
     </head>
     <body>
-        <div class="abs-box">
-            <div class="abs-child"></div>
+        <div class="father">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
         </div>
     </body>
     </html>  
