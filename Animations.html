@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="CWJ">
+        <title>Animations</title>
+        <style>
+            .box{
+                width: 100px;
+                height: 100px;
+                background: blue;
+                animation: 1.5s scaleAndRotateSquare infinite ease-in-out;
+            }
+            @keyframes scaleAndRotateSquare{
+                0%{
+                    transform: none
+                }
+                25%{
+                    transform: rotate(1.5turn) scale( .7, .7);
+                    background-color:blueviolet;
+                }
+                50%{
+                    transform: rotate(3turn) scale( .5, .5);
+                    background-color: chartreuse;
+                }
+                75%{
+                    transform: rotate(4.5turn) scale( .7, .7);
+                    background-color: coral;
+                }
+                100%{
+                    transform: rotate(6turn) scale(1,1);
+                    background-color: crimson;
+                }
+            }
+
+
+        </style>       
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+    </html>  
