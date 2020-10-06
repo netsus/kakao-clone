@@ -1,24 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Kokoa Talk</title>
+    <title>Document</title>
+    <style>
+        div{ /* div 태그에 스타일 적용 */
+            background-color: teal; /*백그라운드 초록색 적용 */
+            width: 50px; /*너비(가로)  50 픽셀 */
+            height: d0px; /*높이(세로) 50 픽셀 */
+        }
+        .a {display: inline;} /* a 클래스는 display가 inline */
+        .b {display: inline;} /* b 클래스도 display가 inline */
+        .c {display: inline-block;} /* c 클래스는 display가 inline-block */
+        .d {display: block;} /* d 클래스는 display가 block */
+    </style>
 </head>
 <body>
-    <div id="status-bar">
-       <div class="status-bar__column">
-           <span>No Service</span>
-           <!-- To Do: Wifi Icon -->
-       </div>
-       <div class="status-bar__column">
-           <span>18:43</span>
-       </div>
-       <div class="status-bar__column">
-           <span>110%</span>
-           <!-- Battery Icon -->
-           <!-- Lightning Icon -->
-       </div>
-    </div>
+    <!-- inline은 width나 height를 가질 수 없어 아무것도 표시되지 않음 -->
+    <div class="a"></div> 
+
+    <!-- inline이라 width나 height가 없지만 문자에 style 적용 -->
+    <div class="b">b</div>
+
+    <!-- inline-block은 요소가 옆으로오며, margin, padding 외 공백이 나온다. -->
+    <div class="c">c</div> 
+
+    <!-- block은 한 줄을 다 차지해서 옆에 아무것도 안온다. -->
+    <div class="d">d</div>
 </body>
 </html>
