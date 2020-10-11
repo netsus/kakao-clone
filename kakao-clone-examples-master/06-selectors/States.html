@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 1000vh;
+            margin: 50px;
+        }
+        div {
+            padding:10px;
+            border: 3px solid pink;
+        }
+        button:hover{
+            background-color: teal;
+        }
+        button:active{
+            background-color:tomato;
+        }
+        button:focus{
+            border: 3px solid brown;
+            border-radius: 3px;
+            padding: 3px;
+        }
+        a:visited {
+            color:tomato;
+        }
+        div:focus-within {
+            border-color: black;
+        }
+        /* Chain Reaction */
+        div:hover button {
+            border-color: royalblue ;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button>Hello</button>
+        <br>
+        <a href="https://www.apple.com">Go to apple</a>
+    </div>
+</body>
+</html>

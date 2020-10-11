@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 1000vh;
+            margin: 50px;
+        }
+        span {
+            color: tomato;
+        }
+        div p span { /* div 밑에 p 밑에 span이면 모두 적용됨 */
+            background-color:saddlebrown;
+            color: white;
+        }
+        div > span {   /* 바로 밑에 자식에게만 적용 */
+            text-decoration: underline;
+        }
+        p ~ span { /* 모든 형제에게 적용 */
+            background-color: yellowgreen;
+        }
+        p + span{ /* 바로 밑에 형제에게만 적용 */
+        border-radius: 10px;
+        padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>hello</span>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit, Quod commodi esequi ipsam odio dolorem. <span>inside</span>
+        </p>
+        <span>hoho</span>
+        <span>next p</span>
+    </div>
+</body>
+</html>
