@@ -5,37 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Transformations</title>
+  <title>The Nicotin</title>
   <style>
-    .box{
-      width: 100px;
-      height: 100px;
-      background: red;
-      animation: 1.5s scaleAndRotateSquare infinite ease-in-out;
+    body {
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
     }
-    /*@keyframes scaleAndRotateSquare {
-      from{
-
+    @keyframes super {
+      0% {
+        transform: rotateY(0);
+        border-radius: 50%;
       }
-      to{
-
+      25% {
+        transform: rotateZ(360deg) translateX(250px);
+        border-radius: 0%;
+        border-color:blue;
       }
-    }*/
-    @keyframes scaleAndRotateSquare {
-      0%{
-        transform:none;
+      50% {
+        border-radius: 50%;
+        transform: rotateY(360deg) translateY(250px);
+        border-color:green;
       }
-      50%{
-        transform: rotate(1turn) scale(.5, .5);
-        color:white;
+      75% { 
+        border-radius: 0%;
+        transform: rotateY(360deg) rotateX(360deg) translateX(250px);
+        border-color:red;
       }
-      100%{
-        transform: none;
-        color:blue;
+      100% {
+        transform: rotateY(0) rotateZ(0) translateZ(250px);
       }
+    }
+    img {
+      width: 400px;
+      border: 10px solid black;
+      border-radius: 50%;
+      animation: super 3s ease infinite;
     }
   </style>
 </head>
 <body>
-  <div class="box">11</div>
+  <img src="../../images/avatar_8.jpg" />
 </body>
 </html>
