@@ -7,15 +7,34 @@
   <title>Media Queries</title>
   <style>
   body{
-    background-color: green;
+    background-color: rgb(185, 204, 185);
   }
-  @media screen and (min-width:320px) and (max-width:640px){
+  @media screen and (min-width:500px) and (max-width:800px){
     body{
-      background-color: blue;
+      background-color: tomato;
+    }
+  }
+  @media screen and (min-width:800px) and (max-width:1000px){
+    body{
+      background-color: teal;
+    }
+  }
+  @media screen and (min-width:1000px) and (max-width:3000px){
+    body{
+      background-color: violet;
+    }
+  }
+  @media screen and (orientation: landscape){
+    body{
+      background-color: violet;
+    }
+    span{ 
+     font-size: 150px;
     }
   }
   </style>
 </head>
 <body>
+  <span>Hello!</span>
 </body>
 </html>
