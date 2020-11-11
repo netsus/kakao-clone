@@ -1,31 +1,24 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        div{ /* div 태그에 스타일 적용 */
-            background-color: teal; /*백그라운드 초록색 적용 */
-            width: 50px; /*너비(가로)  50 픽셀 */
-            height: 50px; /*높이(세로) 50 픽셀 */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        body{
-            height: 100vh;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-direction: column;
-        }
-    </style>
+    <title>Welcome to Kokoa Talk</title>
 </head>
 <body>
-    <div class="a">a</div> 
-    <div class="b">b</div>
-    <div class="c">c</div> 
-    <div class="d">d</div>
+    <div id="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <!-- Wifi Icon -->
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>99%</span>
+            <!-- Battery Icon -->
+            <!-- Lightening Icon -->
+        </div>
+    </div>
 </body>
 </html>
