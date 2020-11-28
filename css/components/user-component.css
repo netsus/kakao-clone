@@ -42,5 +42,6 @@
 }
 
 .user-component__column:last-child {
+  font-size: 15px;
   color: rgba(0, 0, 0, 0.4);
 }
