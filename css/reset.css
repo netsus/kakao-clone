@@ -106,7 +106,9 @@ section {
   display: block;
 }
 body {
+  padding-top: 22px;
   line-height: 1;
+  /* height: 1000vh; */
 }
 ol,
 ul {
