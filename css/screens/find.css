@@ -102,3 +102,35 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(0.75);
+    color: tomato;
+  }
+  20% {
+    transform: scale(1.5);
+    color: red;
+  }
+  40% {
+    transform: scale(0.75);
+    color: tomato;
+  }
+  60% {
+    transform: scale(1.5);
+    color: red;
+  }
+  80% {
+    transform: scale(0.75);
+    color: tomato;
+  }
+  100% {
+    transform: scale(0.75);
+    color: tomato;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartbeat 0.7s infinite;
+}
