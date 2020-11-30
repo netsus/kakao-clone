@@ -56,8 +56,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
+.open-post__divider {
+  opacity: 0.2;
+}
 .open-post__title {
   font-weight: 600;
   margin-bottom: 7px;
