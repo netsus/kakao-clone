@@ -16,3 +16,10 @@
   height: 5px;
   border-radius: 3px;
 }
+
+.badge_dot_big {
+  background-color: #ff6229;
+  width: 7px;
+  height: 7px;
+  border-radius: 3.5px;
+}

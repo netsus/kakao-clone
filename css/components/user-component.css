@@ -26,6 +26,9 @@
   font-size: 17px;
   color: rgba(0, 0, 0, 0.5);
 }
+.user-component__subtitle #red_info {
+  color: #ff5b49;
+}
 
 .user-component__avatar--xl {
   width: 80px;
