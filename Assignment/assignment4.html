@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+</head>
+<body>
+    <h1>Create An Account</h1>
+    <form action="">
+        <label for="first_name">
+            First name
+            <input required id="first_name" type="text" placeholder="First name">
+        </label>
+        <br>
+        <label for="last_name">
+            Last name
+            <input required id="last_name" type="text" placeholder="Last name">
+        </label>
+        <br>
+        <label for="last_name">
+            Email
+            <input required id="last_name" type="email" placeholder="Email">
+        </label>
+        <br>
+        <label for="user_name">
+            Username
+            <input required id="user_name" type="text" placeholder="Username">
+        </label>
+        <br>
+        <label for="password">
+            Password
+            <input required id="password" type="password" minlength="10"  placeholder="Password">
+        </label>
+        <br>
+        <label for="birthday">
+            Birth date
+            <input required id="birthday" type="date" >
+        </label>
+        <br>
+        <label for="happiness">
+            How happy are you
+            <input required id="happiness" type="range" list="tickmarks" >
+            <datalist id="tickmarks">
+                <option value="0"></option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100"></option>
+            </datalist>
+        </label>
+        <br>
+        <label for="birthday">
+            What is your fav. color?
+            <input required id="birthday" type="color" >
+        </label>
+        <br>
+        <button>
+            Create Account
+        </button>
+    </form>
+</body>
+</html>
