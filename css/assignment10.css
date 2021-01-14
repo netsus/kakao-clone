@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+.wrap {
+  width: 375px;
+  /* margin: 20px; */
+}
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px 40px 10px;
+  background-color: #fecd42;
+  align-items: center;
+}
+form {
+  z-index: 10;
+  position: absolute;
+  top: 66px;
+  left: 13px;
+}
+.reply__column {
+  position: relative;
+}
+.reply__column > input {
+  width: 350px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: rgb(224, 224, 224) 0px 5px;
+}
+.reply__column > input::placeholder {
+  padding-left: 20px;
+  color: rgb(185, 185, 185);
+}
+.reply__column > button {
+  border: none;
+  color: grey;
+  background-color: white;
+  position: absolute;
+  z-index: 20;
+  right: 10px;
+  top: 20px;
+}
+main {
+  margin-top: 40px;
+  padding: 20px;
+}
+h1 {
+  font-size: 23px;
+  font-weight: 800;
+}
+.main-book__box {
+  margin-top: 25px;
+  display: flex;
+}
+.main-book__photo > img {
+  width: 120px;
+  height: 180px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.main-book__column > h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.main-book__Journey_text {
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.2;
+  margin-bottom: 10px;
+}
+
+.star5 > i {
+  color: #fecd43;
+}
+
+.star4 > i {
+  color: #fecd43;
+}
+.star4 > i:nth-child(5) {
+  color: #ededed;
+}
+
+.main-book__grey_btn {
+  width: 160px;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.main-book__grey_btn_sub > button {
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.75;
+  background-color: #f7f7f7;
+  padding: 5px 9px;
+  border: none;
+  border-radius: 5px;
+}
+
+.main-book__booking {
+  width: 180px;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Bookmark > button {
+  padding-top: 5px;
+  border: none;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background-color: #fdcc42;
+}
+
+.main-book__buy > button {
+  color: white;
+  width: 100px;
+  height: 32px;
+  background-color: #0d0d0d;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.sub-books > h1 {
+  margin-top: 20px;
+}
+
+.sub-books__book {
+  width: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.sub-books__photo {
+  margin: 20px 30px 10px 0px;
+}
+.sub-books__photo > img {
+  width: 120px;
+  margin-bottom: 7px;
+  border-radius: 7px;
+}
+
+.last-book__authors {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+.last-book__photo > img {
+  width: 130px;
+  border-radius: 7px;
+}
+
+.last-book__column {
+  margin-right: 25px;
+}
+
+.last-book__column > h2 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+
+.last-book__column > span {
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: 500;
+  opacity: 0.3;
+}
