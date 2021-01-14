@@ -1,0 +1,99 @@
+body,
+h1,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: bolder;
+  font-weight: bolder;
+}
+.wrap {
+  border: 5px solid #00c7ad;
+  width: 320px;
+  padding: 20px;
+}
+.playlist {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.now_playing {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.now_playing_image {
+  background-color: #febd11;
+  width: 30px;
+  height: 30px;
+  padding: 45px;
+  margin-right: 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.fa-image {
+  color: white;
+}
+.now_playing_letters {
+  display: flex;
+  flex-direction: column;
+}
+.now_playing_letters > h1 {
+  font-weight: bolder;
+  line-height: 35px;
+  padding-bottom: 10px;
+}
+.control_bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0 25px 0;
+}
+.control_bar_btn {
+  border: 2px solid black;
+  box-sizing: border-box;
+  padding: 15.5px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  box-shadow: 0 5px;
+}
+.play {
+  width: 160px;
+  padding-left: 50px;
+  padding-top: 5px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+.songs_list {
+  display: flex;
+  padding: 22px 0;
+}
+.songs_list_info {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.songs_list_box {
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.red {
+  background-color: #f85a2a;
+}
+.pink {
+  background-color: #ff89bb;
+}
+.blue {
+  background-color: #1946e5;
+}
+.green {
+  background-color: #02c6ac;
+}
